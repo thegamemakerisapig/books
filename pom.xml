@@ -79,6 +79,26 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+<!--            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.2.0</version>
+                <configuration>
+                    <url>jdbc:mysql://localhost:3306/books</url>
+                    <user>root</user>
+                    <pasword>root</pasword>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-jdbc</artifactId>
+                    </dependency>
+                </dependencies>
+            </plugin>-->
         </plugins>
     </build>
 
