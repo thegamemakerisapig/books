@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/editor.md-master/css/editormd.css" />
+<div id="test-editor">
+    <textarea style="display:none;">### 关于 Editor.md
+
+**Editor.md** 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
+    </textarea>
+</div>
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/editor.md-master/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("test-editor", {
+            width: "100%",
+            height: 350,
+            path   : "/editor.md-master/lib/",
+            delay: 0,
+            watch: true,
+            placeholder: "请输入问题描述",
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "/file/upload"
+        });
+    });
+</script>

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class HelloController {
     @GetMapping("/hello")
     public String hello1(){
-        return "hello";
+        return "markdown";
     }
 
     @PostMapping("/hello")
